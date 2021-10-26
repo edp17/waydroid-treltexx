@@ -28,10 +28,10 @@ mkdir -p %{buildroot}/home/waydroid/images
 
 tar xvzf config/vendor.img.tar.gz -C %{buildroot}/home/waydroid/images/
 
-#install -D -m644 config/vendor.img.tar.gz %{buildroot}/home/waydroid/images/vendor.img.tar.gz
 install -D -m666 config/waydroid.cfg %{buildroot}/home/waydroid/waydroid.cfg
 install -D -m644 config/waydroid.prop %{buildroot}/home/waydroid/waydroid.prop
 install -D -m644 config/waydroid_base.prop %{buildroot}/home/waydroid/waydroid_base.prop
+install -D -m666 config/config_nodes %{buildroot}/home/waydroid/lxc/waydroid/config_nodes
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -48,3 +48,4 @@ systemctl restart waydroid-container
 /home/waydroid/waydroid.cfg
 /home/waydroid/waydroid.prop
 /home/waydroid/waydroid_base.prop
+/home/waydroid/lxc/waydroid/config_nodes
