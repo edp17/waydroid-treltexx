@@ -40,6 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 systemctl daemon-reload
 systemctl-user daemon-reload
 systemctl restart waydroid-container
+chmod 777 /home/waydroid
 
 %files
 %defattr(-,root,root,-)
