@@ -4,7 +4,6 @@ Release:        1
 Summary:        Waydroid-treltexx installs the Galaxy Note 4 (treltexx) specific vendor.img, Waydroid.cfg and Waydroid_base.prop.
 License:        GPLv3
 URL:            https://github.com/edp17/waydroid-treltexx
-BuildArch:      noarch
 Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  systemd
