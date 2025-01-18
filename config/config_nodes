@@ -37,9 +37,9 @@ lxc.mount.entry = /dev/video27 dev/video27 none bind,create=file,optional 0 0
 lxc.mount.entry = /dev/video26 dev/video26 none bind,create=file,optional 0 0
 lxc.mount.entry = /dev/video24 dev/video24 none bind,create=file,optional 0 0
 lxc.mount.entry = /dev/video23 dev/video23 none bind,create=file,optional 0 0
-lxc.mount.entry = /dev/anbox-binder dev/binder none bind,create=file,optional 0 0
-lxc.mount.entry = /dev/anbox-vndbinder dev/vndbinder none bind,create=file,optional 0 0
-lxc.mount.entry = /dev/anbox-hwbinder dev/hwbinder none bind,create=file,optional 0 0
+lxc.mount.entry = /dev/puddlejumper dev/binder none bind,create=file,optional 0 0
+lxc.mount.entry = /dev/vndpuddlejumper dev/vndbinder none bind,create=file,optional 0 0
+lxc.mount.entry = /dev/hwpuddlejumper dev/hwbinder none bind,create=file,optional 0 0
 lxc.mount.entry = none dev/pts devpts defaults,mode=644,ptmxmode=666,create=dir 0 0
 lxc.mount.entry = /dev/uhid dev/uhid none bind,create=file,optional 0 0
 lxc.mount.entry = /sys/module/lowmemorykiller sys/module/lowmemorykiller none bind,create=dir,optional 0 0
