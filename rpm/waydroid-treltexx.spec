@@ -1,5 +1,5 @@
 Name:           waydroid-treltexx
-Version:        1.0.0
+Version:        1.1.0
 Release:        1
 Summary:        Waydroid-treltexx installs the Galaxy Note 4 (treltexx) specific vendor.img, Waydroid.cfg and Waydroid_base.prop.
 License:        GPLv3
@@ -25,7 +25,7 @@ Waydroid-treltexx installs the Galaxy Note 4 (treltexx) specific vendor.img, Way
 %install
 mkdir -p %{buildroot}/home/waydroid/images
 
-tar xvzf config/vendor.img.tar.gz -C %{buildroot}/home/waydroid/images/
+tar xvjf config/vendor.img.tar.bz2 -C %{buildroot}/home/waydroid/images/
 
 install -D -m666 config/waydroid.cfg %{buildroot}/home/waydroid/waydroid.cfg
 install -D -m644 config/waydroid.prop %{buildroot}/home/waydroid/waydroid.prop
